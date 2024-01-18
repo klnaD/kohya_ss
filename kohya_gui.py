@@ -95,7 +95,7 @@ def UI(**kwargs):
     if inbrowser:
         launch_kwargs["inbrowser"] = inbrowser
     if share:
-        launch_kwargs["share"] = share
+        launch_kwargs["share"] = False
     interface.launch(**launch_kwargs)
 
 
