@@ -94,7 +94,7 @@ def UI(**kwargs):
         launch_kwargs["server_port"] = server_port
     if inbrowser:
         launch_kwargs["inbrowser"] = inbrowser
-    if share:
+    if True:
         launch_kwargs["share"] = False
     interface.launch(**launch_kwargs)
 
@@ -138,7 +138,7 @@ if __name__ == "__main__":
         password=args.password,
         inbrowser=args.inbrowser,
         server_port=args.server_port,
-        share=args.share,
+        share=False,
         listen=args.listen,
         headless=args.headless,
         language=args.language,
